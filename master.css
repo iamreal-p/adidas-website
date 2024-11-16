@@ -1,0 +1,1522 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+@font-face {
+    font-family: brok;
+    src: url(aset/web-font/Neuborn\ brok.ttf);
+}
+@font-face {
+    font-family: bold1;
+    src: url(aset/web-font/buchanancond.ttf);
+}
+@font-face {
+    font-family: bold2;
+    src: url(aset/web-font/buchananexpand.ttf);
+}
+@font-face {
+    font-family: brok;
+    src: url(aset/web-font/Brooklyn\ Normal\ 1.ttf);
+}
+@keyframes anime1{
+    0%, 40%, 100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    50%, 90%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    overflow-x: hidden;
+    >.row{
+        /* head  */
+        >header{
+            width: 100%;
+            height: 120px;
+            background-color: aqua;
+            position: relative;
+            /* position: fixed; */
+            z-index: 5555555;
+            >div{
+                width: 100%;
+                display: flex;
+                &:first-child{
+                    height: 40px;
+                    position: relative;
+                    background-color: var(--black);
+                    >span{
+                        color: aliceblue;
+                        font-family: bold1;
+                        font-size: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        animation: anime1 linear  alternate infinite;
+                        &:nth-of-type(1){
+                            animation-duration: 10s;
+                        }
+                        &:nth-of-type(2){
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            animation-delay: 10s;
+                            animation-duration: 10s;
+                            visibility: hidden;
+                            opacity: 0;
+                        }
+                    }
+                }
+                &:last-child{
+                    height: 80px;
+                    background-color: var(--white);
+                    display: grid;
+                    grid-template-columns: 10% 68% 12% 13% ;
+                    grid-template-rows: 50% 50% ;
+                    >div{
+                        /* border: 1px solid rgb(16, 0, 243); */
+                        &:nth-of-type(1){
+                            grid-row: 1/3;
+                            >img{
+                                width: 100%;
+                                height: 100%;
+                                padding: 20px;
+                            }
+
+                        }
+                        &:nth-of-type(2){
+                            grid-column: 2/2;
+                            grid-row: 1/3;
+                            >ul{
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                padding-left: 250px;
+                                >li{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: last baseline;
+                                    width:10%;
+                                    height: 100%;
+                                    /* background-color: blueviolet;  */
+                                    /* border: 1px solid blue; */
+                                    &:nth-of-type(1){
+                                        &:hover{
+                                            >ul{
+                                                opacity: 1;
+                                                visibility: visible;
+                                            }
+                                        }
+                                        >ul{
+                                            position: absolute;
+                                            top: 120px;
+                                            left: 0;
+                                            width: 100%;
+                                            min-height: 400px;
+                                            background-color: #edf0f2;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            transition: .2s;
+                                            opacity: 0;
+                                            visibility: hidden;
+                                           
+                                            >li{
+                                                border: 1px solid rgba(0, 0, 0, 0.018);
+                                                display: flex;
+                                                /* flex-grow: 1; */
+                                                width: 16.66%;
+                                                flex-wrap: wrap;
+                                                padding: 35px 45px;
+                                                flex-direction: column;
+                                                
+                                                
+                                                *{
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: flex-start;
+                                                }
+                                                >h2{
+                                                    font-family: bold1;
+                                                    font-size: 20px;
+                                                    width: 100%;
+                                                    /* border: 1px solid red; */
+                                                    padding-bottom: 5px;
+                                                    text-transform: uppercase;
+                                                    cursor: pointer;
+                                                    &:hover{
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                >h6{
+                                                    width: 100%;
+                                                    /* border: 1px solid red; */
+                                                    font-size: 16px;
+                                                    font-family: brok;
+                                                    padding-bottom: 9px;
+                                                    text-transform: capitalize;
+                                                    cursor: pointer;
+                                                    width: 80%;
+                                                    
+                                                    &:hover{
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                &:first-child{
+                                                    flex-grow: 1;
+                                                   
+                                                    >img{
+                                                        width: 50%;
+                                                        margin-top: 10px;
+                                                    }
+                                                }
+                                            }
+                                            >div{
+                                                width: 100%;
+                                                height: 50px;
+                                                border: 1px solid rgba(0, 0, 0, 0.018);
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                >span{
+                                                    /* border: 1px solid black; */
+                                                    display: flex;
+                                                    flex-grow: 1;
+                                                    justify-content:flex-start;
+                                                    font-family: bold1;
+                                                    
+                                                    &:first-child{
+                                                        flex-grow: 1.7;
+                                                        justify-content:flex-start;
+                                                        padding-left: 50px
+                                                    }
+                                                    &:nth-of-type(2){
+                                                        padding-left: 60px
+                                                    }
+                                                    &:nth-of-type(3){
+                                                        padding-left: 20px
+                                                    }
+                                                  
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:nth-of-type(2){
+                                        &:hover{
+                                            >ul{
+                                                opacity: 1;
+                                                visibility: visible;
+                                            }
+                                        }
+                                        >ul{
+                                            position: absolute;
+                                            top: 120px;
+                                            left: 0;
+                                            width: 100%;
+                                            min-height: 400px;
+                                            background-color: #edf0f2;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            transition: .2s;
+                                            opacity: 0;
+                                            visibility: hidden;
+                                           
+                                            >li{
+                                                border: 1px solid rgba(0, 0, 0, 0.018);
+                                                display: flex;
+                                                width: 16.66%;
+                                                flex-wrap: wrap;
+                                                padding: 35px 45px;
+                                                flex-direction: column;
+                                                
+                                                
+                                                *{
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: flex-start;
+                                                }
+                                                >h2{
+                                                    font-family: bold1;
+                                                    font-size: 20px;
+                                                    width: 100%;
+                                                    /* border: 1px solid red; */
+                                                    padding-bottom: 5px;
+                                                    text-transform: uppercase;
+                                                    cursor: pointer;
+                                                    &:hover{
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                >h6{
+                                                    width: 100%;
+                                                    /* border: 1px solid red; */
+                                                    font-size: 16px;
+                                                    font-family: brok;
+                                                    padding-bottom: 9px;
+                                                    text-transform: capitalize;
+                                                    cursor: pointer;
+                                                    width: 80%;
+                                                    
+                                                    &:hover{
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                &:first-child{
+                                                    flex-grow: 1.5;
+                                                   
+                                                    >img{
+                                                        width: 50%;
+                                                        margin-top: 10px;
+                                                    }
+                                                }
+                                            }
+                                            >div{
+                                                width: 100%;
+                                                height: 50px;
+                                                border: 1px solid rgba(0, 0, 0, 0.018);
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                >span{
+                                                    /* border: 1px solid black; */
+                                                    display: flex;
+                                                    flex-grow: 1;
+                                                    justify-content:flex-start;
+                                                    font-family: bold1;
+                                                    
+                                                    &:first-child{
+                                                        flex-grow: 1.7;
+                                                        justify-content:flex-start;
+                                                        padding-left: 50px
+                                                    }
+                                                    &:nth-of-type(2){
+                                                        padding-left: 60px
+                                                    }
+                                                    &:nth-of-type(3){
+                                                        padding-left: 20px
+                                                    }
+                                                  
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:nth-of-type(3){
+                                        &:hover{
+                                            >ul{
+                                                opacity: 1;
+                                                visibility: visible;
+                                            }
+                                        }
+                                        >ul{
+                                            position: absolute;
+                                            top: 120px;
+                                            left: 0;
+                                            width: 100%;
+                                            min-height: 200px;
+                                            background-color: #edf0f2;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            transition: .2s;
+                                            opacity: 0;
+                                            visibility: hidden;
+                                            overflow-y: scroll;
+                                            >li{
+                                                border: 1px solid rgba(0, 0, 0, 0.018);
+                                                display: flex;
+                                                /* height: 100%; */
+                                                flex-wrap: wrap;
+                                                padding: 35px 20px;
+                                                flex-direction: column;
+                                                
+                                                
+                                                *{
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: flex-start;
+                                                }
+                                                >h2{
+                                                    font-family: bold1;
+                                                    font-size: 20px;
+                                                    width: 100%;
+                                                    /* border: 1px solid red; */
+                                                    padding-bottom: 5px;
+                                                    text-transform: uppercase;
+                                                    cursor: pointer;
+                                                    &:hover{
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                >h6{
+                                                    width: 100%;
+                                                    /* border: 1px solid red; */
+                                                    font-size: 16px;
+                                                    font-family: brok;
+                                                    padding-bottom: 9px;
+                                                    text-transform: capitalize;
+                                                    cursor: pointer;
+                                                    width: 80%;
+                                                    
+                                                    &:hover{
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                &:first-child{
+                                                    /* flex-grow: 1.5; */
+                                                    width: 20%;
+                                                    padding: 35px 45px;
+                                                    >img{
+                                                        width: 50%;
+                                                        margin-top: 10px;
+                                                    }
+                                                }
+                                                &:nth-of-type(2){
+                                                  width: 14%;
+                                                  /* height: 700px; */
+                                                  display: flex;
+                                                  flex-wrap: wrap;
+                                                  border-right: none;
+                                                    >hr{
+                                                        margin: 10px 0px;
+                                                    }
+                                                    >h6{
+                                                        width: 100%;
+                                                        /* border: 1px solid red; */
+                                                    }
+                                                }
+                                                &:nth-of-type(3){
+                                                  width: 14%;
+                                                  border-right: none;
+                                                  >hr{
+                                                    margin: 10px 0px;
+                                                }
+                                                }
+                                                &:nth-of-type(4){
+                                                  width: 20%;
+                                                  border-right: none;
+                                                  >hr{
+                                                    margin: 10px 0px;
+                                                  }
+                                                }
+                                                &:nth-of-type(5){
+                                                  width: 14%;
+                                                  border-right: none;
+                                                }
+                                                &:nth-of-type(6){
+                                                  width: 14%;
+                                                }
+                                            }
+                                            >div{
+                                                width: 100%;
+                                                height: 50px;
+                                                border: 1px solid rgba(0, 0, 0, 0.018);
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                >span{
+                                                    /* border: 1px solid black; */
+                                                    display: flex;
+                                                    flex-grow: 1;
+                                                    justify-content:flex-start;
+                                                    font-family: bold1;
+                                                    cursor: pointer;
+                                                    &:first-child{
+                                                        flex-grow: 1.7;
+                                                        justify-content:flex-start;
+                                                        padding-left: 50px
+                                                    }
+                                                    &:nth-of-type(2){
+                                                        padding-left: 60px
+                                                        
+
+                                                    }
+                                                    &:nth-of-type(3){
+                                                        padding-left: 20px
+                                                    }
+                                                  
+                                                }
+                                            }
+                                        }
+                                    }
+                                    /* injast */
+                                    &:nth-of-type(4){
+                                        &:hover{
+                                            >ul{
+                                                opacity: 1;
+                                                visibility: visible;
+                                            }
+                                        }
+                                        >ul{
+                                            position: absolute;
+                                            top: 120px;
+                                            left: 0;
+                                            width: 100%;
+                                            min-height: 200px;
+                                            background-color: #edf0f2;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            transition: .2s;
+                                            opacity: 0;
+                                            visibility: hidden;
+                                           
+                                            >li{
+                                                border: 1px solid rgba(0, 0, 0, 0.018);
+                                                display: flex;
+                                                flex-grow: 1;
+                                                flex-wrap: wrap;
+                                                padding: 35px 65px;
+                                                flex-direction: column;
+                                                
+                                                
+                                                *{
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: flex-start;
+                                                }
+                                                >h2{
+                                                    font-family: bold1;
+                                                    font-size: 20px;
+                                                    width: 100%;
+                                                    /* border: 1px solid red; */
+                                                    padding-bottom: 5px;
+                                                    text-transform: uppercase;
+                                                    cursor: pointer;
+                                                    &:hover{
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                >h6{
+                                                    width: 100%;
+                                                    /* border: 1px solid red; */
+                                                    font-size: 16px;
+                                                    font-family: brok;
+                                                    padding-bottom: 9px;
+                                                    text-transform: capitalize;
+                                                    cursor: pointer;
+                                                    width: 80%;
+                                                    
+                                                    &:hover{
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                &:first-child{
+                                                    flex-grow: 1;
+                                                }
+                                            }
+                                           
+                                        }
+                                    }
+                                    &:nth-of-type(5){
+                                        >p{
+                                            >a{
+                                                font-family: brok;
+                                                font-size: 17px;
+                                            }
+                                        }
+                                        &:hover{
+                                            >ul{
+                                                opacity: 1;
+                                                visibility: visible;
+                                            }
+                                        }
+                                        >ul{
+                                            position: absolute;
+                                            top: 120px;
+                                            left: 0;
+                                            width: 100%;
+                                            min-height: 200px;
+                                            background-color: #edf0f2;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            transition: .2s;
+                                            opacity: 0;
+                                            visibility: hidden;
+                                           
+                                            >li{
+                                                border: 1px solid rgba(0, 0, 0, 0.018);
+                                                display: flex;
+                                                flex-grow: 1;
+                                                flex-wrap: wrap;
+                                                padding: 35px 65px;
+                                                flex-direction: column;
+                                                
+                                                
+                                                *{
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: flex-start;
+                                                }
+                                                >h2{
+                                                    font-family: bold1;
+                                                    font-size: 20px;
+                                                    width: 100%;
+                                                    /* border: 1px solid red; */
+                                                    padding-bottom: 5px;
+                                                    text-transform: uppercase;
+                                                    cursor: pointer;
+                                                    &:hover{
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                >h6{
+                                                    width: 100%;
+                                                    /* border: 1px solid red; */
+                                                    font-size: 16px;
+                                                    font-family: brok;
+                                                    padding-bottom: 9px;
+                                                    text-transform: capitalize;
+                                                    cursor: pointer;
+                                                    width: 80%;
+                                                    
+                                                    &:hover{
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                                &:first-child{
+                                                    /* flex-grow: 1; */
+                                                }
+                                                >img{
+                                                    width: 30%;
+                                                }
+                                            }
+                                            >div{
+                                                width: 100%;
+                                                height: 50px;
+                                                border: 1px solid rgba(0, 0, 0, 0.018);
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                >span{
+                                                    /* border: 1px solid black; */
+                                                    display: flex;
+                                                    flex-grow: 1;
+                                                    justify-content:flex-start;
+                                                    font-family: bold1;
+                                                    
+                                                    &:first-child{
+                                                        flex-grow: 1.7;
+                                                        justify-content:flex-start;
+                                                        padding-left: 50px
+                                                    }
+                                                    &:nth-of-type(2){
+                                                        padding-left: 60px
+                                                    }
+                                                    &:nth-of-type(3){
+                                                        padding-left: 20px
+                                                    }
+                                                  
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &:nth-of-type(6){
+                                        width: 20%;
+                                       >p{
+                                        >a{
+                                            font-family: brok;
+                                            font-size: 15px;
+                                            
+                                           }
+                                       }
+                                       &:hover{
+                                        >ul{
+                                            opacity: 1;
+                                            visibility: visible;
+                                        }
+                                       }
+                                       >ul{
+                                        position: absolute;
+                                        top: 120px;
+                                        left: 0;
+                                        width: 100%;
+                                        min-height: 200px;
+                                        background-color: #edf0f2;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        transition: .2s;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                       
+                                        >li{
+                                            border: 1px solid rgba(0, 0, 0, 0.018);
+                                            display: flex;
+                                            /* flex-grow: 1.5; */
+                                            width: 16.66%;
+                                            flex-wrap: wrap;
+                                            padding: 35px 65px;
+                                            flex-direction: column;
+                                            
+                                            
+                                            *{
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: flex-start;
+                                            }
+                                            >h2{
+                                                font-family: bold1;
+                                                font-size: 20px;
+                                                width: 100%;
+                                                /* border: 1px solid red; */
+                                                padding-bottom: 5px;
+                                                text-transform: uppercase;
+                                                cursor: pointer;
+                                                &:hover{
+                                                    text-decoration: underline;
+                                                }
+                                            }
+                                            >h6{
+                                                width: 100%;
+                                                /* border: 1px solid red; */
+                                                font-size: 16px;
+                                                font-family: brok;
+                                                padding-bottom: 9px;
+                                                text-transform: capitalize;
+                                                cursor: pointer;
+                                                width: 80%;
+                                                
+                                                &:hover{
+                                                    text-decoration: underline;
+                                                }
+                                            }
+                                            &:first-child{
+                                                /* flex-grow: 1; */
+                                            }
+                                            >img{
+                                                width: 30%;
+                                            }
+                                        }
+                                       
+                                    }
+                                    }
+                                    >p{
+                                        width: 100%;
+                                        height: 25%;
+                                        >a{
+                                            width: 100%;
+                                            height: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: last baseline;
+                                            padding-bottom: 10px;
+                                            font-family: bold2;
+                                            text-transform: uppercase;
+                                            color:var(--black) ;
+                                           
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                        &:nth-of-type(3){
+                           grid-column: 3/5;
+                           display: flex;
+                           justify-content: center;
+                           padding-right: 60px;
+                          >a{
+                            width: 90px;
+                            height: 100%;
+                            font-size: 13px;
+                            /* border: 1px solid green; */
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &:nth-of-type(2){
+                                width: 99px;
+                            }
+                          }
+                          >img{
+                            width: 26px;
+                          }
+                        }
+                        &:nth-of-type(4){
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            /* border: 5px solid yellow; */
+                            >span{
+                                width: 90%;
+                                height: 90%;
+                                /* border: 1px solid rgb(215, 48, 48); */
+                                display: flex;
+                                justify-content:flex-start;
+                                align-items: center;
+                                background-color: #edf0f2;
+                                
+                                >input{
+                                    width: 90%;
+                                    height: 100%;
+                                    border: none;
+                                    background-color: #edf0f2;
+                                    padding-left: 6px;
+                                    text-transform: capitalize;
+                                   }
+                            }
+                        }
+                        &:nth-of-type(5){
+                           display: flex;
+                           padding: 0px 40px;
+                           >span{
+                            display: flex;
+                            width: 33.333%;
+                            justify-content: flex-start;
+                            align-items: center;
+                            font-size: 30px;
+                            &:first-child{
+                                position: relative;
+                                &::after{
+                                    content: '1';
+                                    background-color: rgb(234, 202, 0);
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 5px;
+                                    font-size: 20px;
+
+                                }
+                            }
+                           }
+                        }
+                    }
+                }
+            }
+        }
+        /* headend */
+        /* bodys */
+        >section{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+                z-index: 55;
+            >.sec1{
+                width: 100%;
+                height: 700px;
+                background-image: url(aset/photo/xcat_fw24_holiday_shoes_100_under_mh_lg_mw_d_dc3379f48d.jpg);
+                background-position:  0px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+                >h1{
+                    color: var(--black);
+                    border: 1pxs olid red;
+                    position: absolute;
+                    top: 50%;
+                    font-family: bold2;
+                    left: 85px;
+                    background-color: #edf0f2;
+                    padding: 5px 20px;
+                }
+                >h6{
+                    color: var(--black);
+                    /* border: 1px solid red; */
+                    position: absolute;
+                    
+                    font-family: brok;
+                    left: 85px;
+                    background-color: #edf0f2;
+                    padding: 5px 20px;
+                    font-size: 15px;
+                    &:nth-of-type(1){
+                        top: 55%;
+                    }
+                    &:nth-of-type(2){
+                        top: 59%;
+                    }
+                }
+                >span{
+                    color: var(--black);
+                    /* border: 1px solid red; */
+                    position: absolute;
+                    top:63%;
+                    font-family: bold2;
+                    left: 85px;
+                    background-color: #edf0f2;
+                    padding: 5px 20px;
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &:hover{
+                        box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.298) ;
+                    }
+                    >a{
+                        text-decoration: none;
+                        color: var(--black);
+                    }
+                    &:nth-of-type(2){
+                        left: 230px;
+                    }
+                    &:nth-of-type(3){
+                        left: 398px;
+                    }
+                }
+            }
+            /* injasttt */
+            >.sec2{
+                width: 100%;
+                height: 600px;
+                background-color: var(--white);
+                display: flex;
+                flex-wrap: wrap;
+                >div{
+                    width: 100%;
+                    display: flex;
+                    /* border: 1px solid red; */
+                    &:first-child{
+                        height: 20%;
+                        align-items: center;
+                        margin: 15px 0px;
+                        *{
+                            /* border: 1px solid green; */
+                            height: 100%;
+                        }
+                        >a{
+                            width: 15%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            margin-left: 10px;
+                            &:nth-of-type(1){
+                                >span{
+                                    background-color: var(--black);
+                                    color: var(--white);
+                                }
+                            }
+                            &:nth-of-type(2){
+                                justify-content: flex-start;
+                                &:hover{
+                                    >span{
+                                        background-color: var(--black);
+                                        color: var(--white);
+                                    }
+                                }
+                            }
+                            >span{
+                                width: 150px;
+                                height: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 1px solid var(--black);
+                                text-transform: uppercase;
+                                font-family: bold2;
+                                color: black;
+                            }
+                            &:nth-of-type(3){
+                                width: 70%;
+                               
+                                >p{
+                                    width: 150px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content:center;
+                                    align-items: center;
+                                    margin-right: 80px;
+                                    text-decoration: underline;
+                                    font-family: bold2;
+                                    /* border: 5px solid yellow; */
+                                    color: var(--black);
+                                    &:hover{
+                                        background-color: black;
+                                        color: var(--white);
+                                    }
+
+                                }
+                            }
+                        }
+                       
+                       
+                    }
+                    &:last-child{
+                        height: 80%;
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px
+                        ;
+                        >figure{
+                            width: 300px;
+                            height: 450px;
+                            
+                            position: relative;
+                            display: flex;
+                            flex-wrap: wrap;
+                            
+                            &:hover{
+                                border: 1px solid rgb(0, 0, 0);
+                                >span{
+                                    &:nth-of-type(1){
+                                        transform: translateY(-15px);
+                                    }
+                                }
+                            }
+                            >img{
+                                height: 75%;
+                                width: 100%;
+                                background-color: aqua;
+                                object-fit: cover;
+                                object-position: top;
+                            }
+                           
+                            >span{
+                                &:nth-of-type(1){
+                                    position: absolute;
+                                   bottom: 110px;
+                                   left: 10px;
+                                   background-color: var(--white);
+                                   font-family: brok;
+                                   font-size: 17px;
+                                   transition: .4s;
+                                }
+                                &:nth-of-type(2){
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 5px;
+                                }
+                            }
+                            >figcaption{
+                                width: 100%;
+                                height: 30%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding-left: 10px;
+                                flex-direction: column;
+                                *{
+                                    /* border: 1px solid red; */
+                                   
+                                }
+                                >h6{
+                                    width: 100%;
+                                    height: 50px;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    font-family: bold1;
+                                    font-size: 22px;
+                                    margin-top: 10px;
+                                }
+                                >p{
+                                    width: 100%;
+                                    height: 40px;
+                                    font-family: brok;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    color: gray;
+                                }
+                            }
+                        }
+                    }
+                }
+                }
+            >.sec3{
+                width: 100%;
+                height: 1050px;
+                background-color: var(--white);
+                /* border: 1px solid red]; */
+                display: flex;
+                align-items: flex-end;
+                >div{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    /* border: 1px solid red; */
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    padding-top: 30px;
+                        >figure{
+                            width: 400px;
+                            height: 850px;
+                            /* border: 1px solid black; */
+                            display: flex;
+                            flex-wrap: wrap;
+                            
+                            *{
+                                /* border: 1px solid red; */
+                            }
+                            >img{
+                                width: 100%;
+                                height:70% ;
+                                object-fit: cover;
+                            }
+                            >video{
+                                width: 100%;
+                                height: 70%;
+                                object-fit: cover;
+                                object-position: top;
+
+                            }
+                            >figcaption{
+                                width: 100%;
+                                height: 30%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+                                
+                                >h4{
+                                    width: 100%;
+                                    height: 40px;
+                                    font-family: bold2;
+                                    padding: 10px 10px;
+                                    font-size: 22px;
+                                }
+                                >p{
+                                    width: 100%;
+                                    height: 90px;
+                                    padding: 20px 10px;
+                                    font-family: brok;
+
+                                }
+                                >h2{
+                                    width: 1000%;
+                                    height: 100px;
+                                    /* border: 2px solid rgb(255, 0, 0); */
+                                    display: flex;
+                                    align-items: flex-end;
+                                    padding-left: 10px;
+                                    >a{
+                                        text-decoration: underline;
+                                        color: var(--black);
+                                        font-family: bold2;
+                                        font-size: 19px;
+
+                                    }
+                                }
+                            }
+                        }
+                      
+                    }
+                    
+
+                }
+            >.sec4{
+                    width: 100%;
+                    height: 600px; 
+                    padding: 0px 110px;
+                    background-color: var(--white);
+                    /* border: 1px solid red; */
+                    >section{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        /* padding: 80px 0px; */
+                        margin-top: -30px;
+                        >div{
+                            /* border: 1px solid black; */
+                            display: flex;
+                            align-items: center;
+                            padding-left: 100px;
+                            font-family: bold2;
+                            font-size: 30px;
+                            margin: 0px 1px;
+                            position: relative;
+                            &:hover{
+                                >.line{
+                                    height: 10px;
+                                    
+                                }
+                            }
+                            &:nth-of-type(1){
+                                width: 100%;
+                                height: 200px;
+                                font-size: 22px;
+                               
+                               
+                            }
+                            &:nth-of-type(2){
+                                width: 33%;
+                                height: 200px;
+                               
+                
+                            }
+                            &:nth-of-type(3){
+                                width: 33%;
+                                height: 200px;
+                               
+                               
+                            }
+                            &:nth-of-type(4){
+                                width: 33.333333%;
+                                height: 200px;
+                               
+                            }
+                            &:nth-of-type(5){
+                                width: 33.333333%;
+                                height: 200px;
+                               
+                            }
+                            &:nth-of-type(6){
+                                width: 33%;
+                                height: 200px;
+                               
+                            }
+                            &:nth-of-type(7){
+                                width: 33%;
+                                height: 200px;
+                              
+                            }
+                            >.line{
+                                width: 70%;
+                                height: 1px;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                background-color: black;
+                                border: 3px solid black;
+                                margin-left: 90px;
+                            }
+                        }
+                    }
+                }
+            >.sec5{
+                width: 100%;
+                height: 1350px;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0px 120px;
+                flex-direction: column;
+                padding-top:150px;
+                background-color: var(--white);
+                >div{
+                    display: flex;
+                    /* border: 1px solid black; */
+                    flex-wrap: wrap;
+                    &:first-child{
+                        width: 100%;
+                        height: 50%;
+                        justify-content: space-evenly;
+                        padding-top: 20px;
+                        >h2{
+                            width: 100%;
+                            height: 90px;
+                            /* border: 1px solid red; */
+                            padding-left: 80px;
+                            display: flex;
+                            align-items: center;
+                            font-family: bold2;
+                            font-size: 35px;
+                        }
+                        >figure{
+                            width:560px;
+                            height: 500px;
+                            /* border: 1px solid rgb(43, 184, 0); */
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            *{
+                                /* border: 1px solid red; */
+                            }
+                            >img{
+                                width: 100%;
+                                height: 65%;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                            figcaption{
+                                width: 80%;
+                                height: 35%;
+                                background-color: var(--white);
+                                transform: translateY(-25px);
+                                >h4{
+                                    font-family: brok;
+                                    font-size: 25px;
+                                    font-weight: bolder;
+                                    text-transform: capitalize;
+                                }
+                                >p{
+                                    font-family: brok;
+                                    font-size: 20px;
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child{
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        align-items: flex-end;
+                        >div{
+                            width: 25%;
+                            height: 80%;
+                            /* border: 1px solid red; */
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 70px;
+                            *{
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                               
+                                font-family: brok;
+                                cursor: pointer;
+                                
+                            }
+                            >h3{
+                                width: 100%;
+                                font-size: 28px;
+
+                            }
+                            >span{
+                                width: 100%;
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+                }
+            >.sec6{
+                width: 100%;
+                height: 1200px;
+                background-color: var(--black);
+                display: flex;
+                flex-wrap: wrap;
+                padding: 120px 500px;
+                *{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    /* border: 1px solid yellowgreen; */
+                    color: var(--white);
+                    align-items: center;
+                }
+                >h2{
+                    height: 10%;
+                    font-family: bold2;
+                    text-transform: uppercase;
+                    font-size: 26px;
+                }
+                >p{
+                    height: 80%;
+                    font-size: 24px;
+                    font-family: brok;
+                    text-transform: capitalize;
+                    text-align: justify;
+                }
+                >img{
+                    height: 10%;
+                   
+                }
+            }
+            >.sec7{
+                width: 100%;
+                height: 200px;
+                background-color: var(--yellow);
+                display: flex;
+                padding: 0px 390px;
+                *{
+                    /* border: 1px solid black; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                >h2{
+                    width: 70%;
+                    height: 100%;
+                    font-family: brok;
+                    font-size: 45px;
+                }
+                >span{
+                    width: 30%;
+                    height: 100%;
+                    &:hover{
+                       >a{
+                        color: rgba(119, 119, 119, 0.713);
+                       }
+                    }
+                    >a{
+                        font-family: brok;
+                        font-size: 25px;
+                        color: var(--white);
+                        background: var(--black);
+                        height: 70px;
+                        padding: 10px;
+                        position: relative;
+                        z-index: 9999;
+                        transition: .5s;
+                       
+                        >span{
+                            color: var(--white);
+                        }
+                        &::after{
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                            border: 1px solid rgb(0, 0, 0);
+                            position: absolute;
+                            top: 5px;
+                            left: 5px;
+                            z-index: 55;
+                        }
+                    }
+
+                }
+            }
+            >.sec8{
+                width: 100%;
+                height: 980px;
+                display: flex;
+                padding: 80px 110px;
+                background-color: var(--white);
+                >div{
+                    /* border: 1px solid red; */
+                    height: 100%;
+                    display: flex;
+                    flex-grow: 1;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    padding:20px;
+                    *{
+                        font-family: brok;
+                        /* border: 1px solid black; */
+                        font-family: brok;
+                        color: var(--black);
+                        width: 100%;
+                        display: flex;
+                        padding-top: 15px;
+                        cursor: pointer;
+                    }
+                    >h3{
+                        height: 50px;
+                        font-size: 24px;
+                    }
+                    >span{
+                        height: 40px;
+                        font-size: 20px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    &:nth-of-type(6){
+                        >span{
+                            font-size: 35px;
+                            height: 60px;
+                            &:hover{
+                                text-decoration:none;
+                            }
+                        }
+                    }
+                }
+            }
+            >.sec9{
+                width: 100%;
+                height: 200px;
+                background-color: var(--gray);
+                display: flex;
+                flex-wrap: wrap;
+                /* flex-direction: column; */
+                >span{
+                    /* border: 1px solid red; */
+                    display: flex;
+                    align-items: center;
+                    font-family: brok;
+                    color: var(--white);
+
+                    &:nth-of-type(1){
+                        width: 45%;
+                        height: 50%;
+                        justify-content: flex-end;
+                        border-right: 1px solid var(--white);
+                        >img{
+                            width: 10%;
+                            padding: 0px 10px;
+                        }
+                    }
+                    &:nth-of-type(2){
+                        width: 10%;
+                        height: 50%;
+                        justify-content: center;
+                        border-right: 1px solid var(--white);
+                    }
+                    &:nth-of-type(3){
+                        width: 45%;
+                        height: 50%;
+                        justify-content: flex-start;
+                        padding-left: 10px;
+                        border-image-outset: 10px;
+                    }
+                    &:nth-of-type(4){
+                        width: 100%;
+                        height: 50%;
+                        justify-content: center;
+
+                    }
+                }
+            }
+            >.sec10{
+                width: 300px;
+                height: 200px;
+                /* background-color: aqua; */
+                display: flex;
+                justify-content: flex-end;
+                position: fixed;
+                bottom: 5px;
+                right: 0;
+                >figure{
+                    width: 200px;
+                    height: 200px;
+                    /* background-color: blueviolet; */
+                    border-radius: 50%;
+                    position: absolute;
+                    &:hover{
+                        >a{
+                            opacity: 1;
+                            left: -50px;
+                        }
+                        >img{
+                            opacity: 1;
+                        }
+                    }
+                    >img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        opacity: .5;
+                    }
+                    >a{
+                        position: absolute;
+                        color: var(--black);
+                        transition: 1s;
+                        opacity: 0;
+                        &:hover{
+                            scale: 1.2;
+                        }
+                        &:nth-of-type(1){
+                            top: 30px;
+                            left: 0px;
+                        }
+                        &:nth-of-type(2){
+                            bottom: 80px;
+                            left: 0px;
+                        }
+                        &:nth-of-type(3){
+                            bottom: 30px;
+                            left: 0px;
+                        }
+                        >span{
+                            font-size: 35px;
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+   
+
+}

@@ -1,0 +1,25 @@
+body{
+    overflow-x: hidden;
+}
+.row{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+}
+:root{
+    --black:#000000;
+    --yellow:#ede734;
+    --white:#ffffff;
+    --gray:#282c30;
+    --gray2:#edf0f2;
+}
+ul{
+    list-style: none;
+}
+li{
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
