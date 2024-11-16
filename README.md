@@ -18,8 +18,15 @@ adidas website
 
 ## پیش‌نمایش
 
-![پیش‌نمایش صفحه اصلی](./images/screenshot1.png)
-![پیش‌نمایش بخش نمونه‌کارها](./images/screenshot2.png)
+![پیش‌نمایش صفحه اصلی](./images/first.png)
+![پیش‌نمایش صفحه اصلی](./images/secound.png)
+![پیش‌نمایش صفحه اصلی](./images/three.png)
+![پیش‌نمایش صفحه اصلی](./images/four.png)
+![پیش‌نمایش صفحه اصلی](./images/five.png)
+![پیش‌نمایش صفحه اصلی](./images/six.png)
+![پیش‌نمایش صفحه اصلی](./images/seven.png)
+![پیش‌نمایش صفحه اصلی](./images/eight.png)
+![پیش‌نمایش صفحه اصلی](./images/nine.png)
 
 ---
 
